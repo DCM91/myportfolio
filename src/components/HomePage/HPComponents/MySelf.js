@@ -46,7 +46,7 @@ const SelfStyle = styled.div`
     background-color: #686461;
     min-height: min-content;
     max-height: max-content;
-    margin-top: -1rem;
+    margin-top: 0;
     padding-top: 0;
     
   }

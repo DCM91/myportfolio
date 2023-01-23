@@ -15,7 +15,7 @@ export const HPInfo = () => {
         </div>
         <div className='box'>
         <h3 className='HPtitles'>Skills</h3>
-          
+          <p>FRONTEND</p>
           <Card
           className="cards"
           border="warning"
