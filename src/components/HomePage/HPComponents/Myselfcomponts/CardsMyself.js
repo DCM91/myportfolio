@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { MdWeb, MdOutlineStorage } from "react-icons/md";
+import { MdWeb, MdOutlineStorage, MdScience, MdBuild  } from "react-icons/md";
 import styled from "styled-components";
 
 export const CardsMyself = () => {
@@ -13,7 +13,7 @@ export const CardsMyself = () => {
           bg="dark"
           style={{ width: "7rem", height: "7.5rem" }}
         >
-          <Card.Header>FrontEnd</Card.Header>
+          <Card.Header>FRONTEND</Card.Header>
           <Card.Body>
             <Card.Title className="icono">
               <MdWeb />
@@ -28,10 +28,40 @@ export const CardsMyself = () => {
           style={{ width: "7rem", height: "7.5rem" }}
         >
           {" "}
-          <Card.Header>BackEnd</Card.Header>
+          <Card.Header>BACKEND</Card.Header>
           <Card.Body>
             <Card.Title className="icono">
               <MdOutlineStorage />
+            </Card.Title>
+          </Card.Body>
+        </Card>
+
+        <Card
+          className="cards"
+          border="warning"
+          bg="dark"
+          style={{ width: "7rem", height: "7.5rem" }}
+        >
+          {" "}
+          <Card.Header>TOOLS</Card.Header>
+          <Card.Body>
+            <Card.Title className="icono">
+              <MdBuild />
+            </Card.Title>
+          </Card.Body>
+        </Card>
+
+        <Card
+          className="cards"
+          border="warning"
+          bg="dark"
+          style={{ width: "7rem", height: "7.5rem" }}
+        >
+          {" "}
+          <Card.Header>TDD</Card.Header>
+          <Card.Body>
+            <Card.Title className="icono">
+              <MdScience />
             </Card.Title>
           </Card.Body>
         </Card>
@@ -47,7 +77,10 @@ const CardStyle = styled.div`
   }
   .cards {
     margin: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
     color: #f2f2f2;
+    display: block;
+    justify-content: center;
+    text-align: center;
   }
 `;
