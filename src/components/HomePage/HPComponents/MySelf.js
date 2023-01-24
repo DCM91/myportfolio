@@ -5,7 +5,7 @@ import { CardsMyself } from "./Myselfcomponts/CardsMyself";
 export const MySelf = () => {
   return (
     <SelfStyle>
-             <h1>
+          <h1>
             Full Stack <span>Developer</span>
           </h1>
         <div className="content">
@@ -22,7 +22,9 @@ export const MySelf = () => {
               <span>to improve myself!</span>
             </p>
           </section>
-          <CardsMyself />
+          <div className="section2">
+            <CardsMyself />
+          </div>
         </div>
     </SelfStyle>
   );
@@ -57,12 +59,20 @@ const SelfStyle = styled.div`
     width: 80%;
     max-height: max-content;
   }
+  .section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   h1 {
     color: #f2f2f2;
     padding-top: 3rem;
     text-shadow: #000 0.35rem 0.2rem;
     font-family: "Righteous", cursive;
     padding-right: -0.4rem;
+    text-align: center;
+    width: 100%;
   }
   span {
     color: #ffec78;
@@ -74,15 +84,18 @@ const SelfStyle = styled.div`
     height: 11rem;
     margin-right: .2em;
     margin-left: 0;
+    margin-top: 2.2rem;
 
   }
   .texto1 {
-    padding-left: 2rem;
     color: #f2f2f2;
     padding-top: 1rem;
     font-family: "Poppins", sans-serif;
     font-size: larger;
     padding-top: 3.5rem;
-    width: 60%;
+    width: 80%;
+    padding-left: 1rem;
+    text-align: start;
+
   }
 `;

@@ -70,14 +70,20 @@ export const CardsMyself = () => {
   );
 };
 const CardStyle = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-weight: bold;
+
   .icono {
     font-size: xx-large;
     color: #ffec78;
 
   }
   .cards {
-    margin: 2rem;
-    margin-bottom: 1rem;
+    margin: .5rem;
+    margin-top: 2rem;
     color: #f2f2f2;
     display: block;
     justify-content: center;
