@@ -60,7 +60,7 @@ const AbouStyle= styled.div`
   justify-content: center;
   text-decoration: none;
   color: white;
-  width: 85%;
+  width: 95%;
   text-align: start;
   position: static;
   
