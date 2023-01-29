@@ -10,6 +10,7 @@ function App() {
         <CanvassNav />
         <HomePage />
       </div>
+
     </>
     
     

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from "react-bootstrap/Card";
-import { MdOutlinePhonelink  } from "react-icons/md";
+import { AboutMe } from './HPcomponents/AboutMe';
+import { Skills } from './HPcomponents/Skills';
 
 
 
@@ -9,27 +9,12 @@ export const HPInfo = () => {
   return (
     <InfoStyle>
       <div>
-       <h3 className='HPtitles'>About Me</h3>
-        <div className='box'>
-          <p className='Aboutme'>Mi madre me dijo a mí, que cantara y no llorara, Mi madre me dijo a mí, que cantara y no llorara,Mi madre me dijo a mí, que cantara y no llorara   </p>
+        <div className='box' >
+          <AboutMe />
         </div>
-        <div className='box'>
-        <h3 className='HPtitles'>Skills</h3>
-          <p>FRONTEND</p>
-          <Card
-          className="cards"
-          border="warning"
-          bg="dark"
-          style={{ width: "7rem", height: "7.5rem" }}
-        >
-          {" "}
-          <Card.Header>RESPONSIVE</Card.Header>
-          <Card.Body>
-            <Card.Title className="icono">
-              <MdOutlinePhonelink />
-            </Card.Title>
-          </Card.Body>
-        </Card>
+
+        <div  className='box'>
+          <Skills />
         </div>
 
         <div className='box'>
@@ -56,9 +41,12 @@ const InfoStyle = styled.div`
     justify-content: center;
     text-align: center;
 .box{
-  width: 100%;
+  width: 100%%;
+  min-height: fit-content;
+  max-height: max-content;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 .HPtitles{
   margin: 1rem;

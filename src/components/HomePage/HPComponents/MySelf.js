@@ -18,7 +18,8 @@ export const MySelf = () => {
           />  
             <p className="texto1">
               Ambitious junior professional in
-              <span> web development</span>, honing my skills and knowledge{" "}
+              <span> web development</span>.<br/>
+              Honing my skills and knowledge{" "}
               <span>to improve myself!</span>
             </p>
           </section>
@@ -33,11 +34,9 @@ export const MySelf = () => {
 const SelfStyle = styled.div`
   display: block;
   justify-content: center;
-  padding: 1rem;
   padding-top: 3rem;
-  background-color: #686461;
-  min-width: 100vw;
-  max-width: max-content;
+  background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
+  width: 100%;
   color: white;
 
   .content {
@@ -45,11 +44,11 @@ const SelfStyle = styled.div`
     flex-direction: row;
     width: 75%;
     justify-content: center;
-    background-color: #686461;
     min-height: min-content;
     max-height: max-content;
     margin-top: 0;
     padding-top: 0;
+    padding-bottom: 1rem;
     
   }
   section {
@@ -85,17 +84,19 @@ const SelfStyle = styled.div`
     margin-right: .2em;
     margin-left: 0;
     margin-top: 2.2rem;
+    border-radius: 1rem;
 
   }
   .texto1 {
     color: #f2f2f2;
-    padding-top: 1rem;
     font-family: "Poppins", sans-serif;
     font-size: larger;
     padding-top: 3.5rem;
     width: 80%;
     padding-left: 1rem;
     text-align: start;
+    min-height: fit-content;
+    max-height: max-content;
 
   }
 `;

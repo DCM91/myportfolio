@@ -20,6 +20,7 @@ div{
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
+    width: 100%;
 }
 
     

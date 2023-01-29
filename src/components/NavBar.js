@@ -34,7 +34,10 @@ export const CanvassNav = () => {
                   title="About Me"
                   id={`offcanvasNavbarDropdown-expand-md`}
                 >
-                  <NavDropdown.Item href="#action3">MyLife</NavDropdown.Item>
+                  <NavDropdown.Item href="#action20"> About Me</NavDropdown.Item>
+
+                  
+                  <NavDropdown.Item href="#action3">Skills</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Hobbies</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
@@ -61,7 +64,7 @@ margin: .1rem .3rem;
 .mb-3 {
   position: fixed;
   width: 101%;
-  background-color: #000 !important;
+  background-color: #686461;
   padding-left: 2rem;
   padding: .3rem;
   margin: 0;
