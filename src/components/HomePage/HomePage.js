@@ -21,6 +21,7 @@ div{
     justify-content: center;
     justify-items: center;
     width: 100%;
+    z-index: 1;
 }
 
     

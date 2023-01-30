@@ -41,7 +41,7 @@ const InfoStyle = styled.div`
     justify-content: center;
     text-align: center;
 .box{
-  width: 100%%;
+  width: 100%;
   min-height: fit-content;
   max-height: max-content;
   display: flex;
@@ -52,6 +52,7 @@ const InfoStyle = styled.div`
   margin: 1rem;
   padding: 1rem;
   height: 10WH;
+  z-index: 1;
 }
 .Aboutme{
   margin-top: 0;

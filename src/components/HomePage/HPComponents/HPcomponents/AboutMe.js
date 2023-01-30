@@ -18,7 +18,7 @@ export const AboutMe = () => {
           Soy un apasionado por el aprendizaje y la mejora continua en el sector TIC, y con gran deseo por adquirir nuevos conocimientos y habilidades en este campo.<br />
           <br />
 
-          Durante 10 años, fui un empresario independiente en Barcelona, donde aprendí a trabajar en equipo y a ser resolutivo pero decidí dar un giro a mi carrera y comencé a estudiar desarrollo de software Full Stack.<br/> 
+          Durante 10 años, fui autónomo independiente en Barcelona, donde aprendí a trabajar en equipo y a ser resolutivo pero decidí dar un giro a mi carrera y comencé a estudiar desarrollo de software Full Stack.<br/> 
           <br />
           Actualmente, llevo un año dedicado a este campo y me encanta descubrir nuevas tecnologías y herramientas.<br />En mi tiempo libre, disfruto de pasatiempos como la NBA <SiJordan/>, calistenia <CgGym />, videojuegos <IoGameController /> o de mi compañia felina <GiCat/>.<br />
           <br />
@@ -34,25 +34,15 @@ const AbouStyle= styled.div`
 
   display: block;
   text-align: center;
-  padding: 4rem;
-  padding-top: 2rem;
+  padding: 2rem 4rem;
   text-decoration: none;
   color: white;
-  background-color: #686461;
   background: radial-gradient(ellipse at bottom,#686461 0,#090a0f 100%);
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 55vh;
+  height: fit-content;
   overflow: hidden;
-  transition: height 3s ease-in-out;
-
-  :hover{
-    transition: height 3s ease-in-out;
-
-    height: fit-content;
-
-
-  }
+  z-index: 1;
 
 
 

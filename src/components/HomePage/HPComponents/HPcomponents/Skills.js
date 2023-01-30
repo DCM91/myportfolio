@@ -37,7 +37,9 @@ const SkillsStyle= styled.div`
     justify-content: center;
     text-decoration: none;
     color: white;
-  
+    background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
+    z-index: 1;
+
 
 h5{
     max-width: max-content;

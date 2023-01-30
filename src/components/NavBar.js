@@ -57,8 +57,9 @@ export const CanvassNav = () => {
 }
 
 const NavBarStyle= styled.div`
-
+position: absolute;
 margin: .1rem .3rem;
+z-index: 100;
 
 
 .mb-3 {
