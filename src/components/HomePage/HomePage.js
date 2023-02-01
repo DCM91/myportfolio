@@ -6,7 +6,9 @@ import { HPInfo } from './HPComponents/HPInfo'
 export const HomePage = () => {
   return (
     <HPStyle>
+        
         <div>
+          
             <MySelf />
             <HPInfo />
         </div>
@@ -20,8 +22,10 @@ div{
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    width: 100%;
-    z-index: 1;
+    width: 99.5%;
+    z-index: 0;
+
+
 }
 
     

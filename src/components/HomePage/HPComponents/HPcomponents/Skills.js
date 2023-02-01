@@ -1,75 +1,150 @@
 import React from 'react'
-import styled from 'styled-components'
+import { MdBuild, MdOutlineStorage, MdScience, MdStarRate, MdWeb } from 'react-icons/md';
+import { DiBootstrap, DiCss3, DiGitBranch, DiHtml5, DiJavascript1, DiNodejs, DiReact } from "react-icons/di";
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import styled from 'styled-components';
+import { SiCypress, SiExpress, SiInsomnia, SiJest, SiMongodb } from 'react-icons/si';
+
 
 export const Skills = () => {
   return (
-    <SkillsStyle>
+    <TimeLineStyle>
     <div>
-     <h3>Skills</h3>
-    </div>
-    <div>
-        <section className='Sk'>
-        <h5>Frontend</h5>
-        </section>
-        <section className='Sk'>
-        <h5>Backend</h5>
-        </section>
-        <section className='Sk'>
-        <h5>Tools</h5>
-        </section>
-        <section className='Sk'>
-        <h5>TDD</h5>
-        </section>
-     </div>
-     <div><p>See moore</p></div>
-    
-    </SkillsStyle>
+      <div className='titlesk'>
+      <h2>Skills</h2>
+      </div>
 
+
+      <div>
+        <VerticalTimeline
+        layout={'1-columns'}
+        className='all'
+        >
+
+        <VerticalTimelineElement
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          icon={<MdWeb />}
+        >
+
+            <h3>Frontend Developer</h3>
+
+            <h3 className='icons'>
+              <DiReact/>
+              <DiJavascript1/>
+              <DiCss3/>
+              <DiHtml5/>
+            </h3>
+
+      </VerticalTimelineElement>
+
+
+
+      <VerticalTimelineElement
+        
+        contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
+        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        icon={<MdOutlineStorage />}
+      >
+        <h3>Backend Developer</h3>
+        <h3 className='icons'>
+          <DiNodejs/>
+          <SiExpress/>
+          <SiMongodb/>
+        </h3>
+      </VerticalTimelineElement>
+
+
+
+      <VerticalTimelineElement
+        contentStyle={{ background: '#808080', color: '#fff' }}
+        iconStyle={{ background: '#808080', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #808080' }}
+        icon={<MdBuild />}
+      >
+        <h3 className="vertical-timeline-element-title">Frameworks & Tools</h3>
+        <h3 className='icons'>
+          <DiGitBranch/>
+          <DiBootstrap/>
+          <SiInsomnia/>
+        </h3>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        contentStyle={{ background: '#00a05d', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #00a05d' }}
+        iconStyle={{ background: '#00a05d', color: '#fff' }}
+        icon={<MdScience />}
+      >
+        <h3>Test Driven Development</h3>
+        <h3 className='icons'>
+          <SiCypress/>
+          <SiJest/>
+        </h3>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+        icon={<MdStarRate />}
+        />
+      </VerticalTimeline>
+      </div>
+    </div>
+    </TimeLineStyle>    
   )
 }
-const SkillsStyle= styled.div`
 
-    width: 90%;
-    height: 40vh;
+const TimeLineStyle = styled.div`
     display: flex;
-    flex-direction: column;
-    flex-wrap:  wrap;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
-    z-index: 1;
-
-
-h5{
-    max-width: max-content;
-    min-height: fit-content;
+    width: 90%;
+    min-height: 80vh;
     max-height: max-content;
-    color: #ffec78;
-    text-align: center;
-        :hover{
-                color: red;
-                scale: 1.05;
+    overflow: hidden;
+    margin-right: 2rem;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    padding-top: 2rem;
+    
 
-            }
+.all{
+  justify-content: center;
+  text-align: center;
+}
+.vertical-timeline-element-content.bounce-in{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: .5rem 2rem;
+  text-align: center;
+  margin-right: 1rem;
 
 
 }
-.Sk{
-    width: 45%;
-    height: 10vh;
-    border: solid .5rem #ffec78;
-    margin: .5rem;
-    padding: .5rem;
-    display: flex;
-    justify-content: center;
-    :hover{
-            color: red;
-            scale: 1.05 ease-in duration-300;
-            border: solid .5rem red;
+.titlesk{
+  color: #ffec78;
+  display: flex;
+  width: 100%;
+  text-align: start;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-family: "Righteous", cursive;
+  font-size: xx-large;
+}
 
+h3{
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
 
-        }
-
+}
+.icons{
+  color: #ffec78;
+  font-size: xx-large;
+  font-weight: bold;
 }
 `

@@ -5,9 +5,6 @@ import { loadFull } from "tsparticles";
 export const Partic= () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
@@ -20,15 +17,15 @@ export const Partic= () => {
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
+            style= {{
+                zIndex: 1,
+              
+            }}
             options={{
                 background: {
-                    color: {
-                        value: "radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%)",
-                        
-
-                    },
+                    color: "radial-gradient(ellipse at center,#1b2735 0,#090a0f 100%)",
                 },
-                fpsLimit: 120,
+                fpsLimit: 100,
                 interactivity: {
                     events: {
                         onClick: {
@@ -46,7 +43,7 @@ export const Partic= () => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },

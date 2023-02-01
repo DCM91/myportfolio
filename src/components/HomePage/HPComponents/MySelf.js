@@ -28,7 +28,7 @@ export const MySelf = () => {
               'TDD',
               2000,
               ]}
-              speed={40} // Custom Speed from 1-99 - Default Speed: 40
+              speed={30} // Custom Speed from 1-99 - Default Speed: 40
               style={{ fontSize: '1em' }}
               wrapper="span" // Animation will be rendered as a <span>
               repeat={Infinity} // Repeat this Animation Sequence infinitely
@@ -54,9 +54,9 @@ const SelfStyle = styled.div`
   display: block;
   justify-content: center;
   padding-top: 3rem;
-  background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
   width: 100%;
   color: white;
+  height: fit-content;
 
   .content {
     display: flex;
@@ -76,7 +76,8 @@ const SelfStyle = styled.div`
     justify-content: center;
     width: 100%;
     max-height: max-content;
-    
+    text-align: center;
+    justify-content: center;
   }
   .section2{
     width: 100%;
@@ -84,6 +85,8 @@ const SelfStyle = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 1;
+    text-align: center;
+
   }
   h1 {
     color: #f2f2f2;
@@ -111,7 +114,7 @@ const SelfStyle = styled.div`
     padding-top: .5rem;
     width: 80%;
     padding-left: 1rem;
-    text-align: start;
+    text-align: center;
     min-height: fit-content;
     max-height: max-content;
     z-index: 1;
@@ -123,7 +126,7 @@ const SelfStyle = styled.div`
   
     width: 80%;
     padding-left: 1rem;
-    text-align: start;
+    text-align: center;
     min-height: fit-content;
     max-height: max-content;
     z-index: 1;

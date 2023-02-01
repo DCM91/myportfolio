@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AboutMe } from './HPcomponents/AboutMe';
+import { Hobbies } from './HPcomponents/Hobbies';
 import { Skills } from './HPcomponents/Skills';
 
 
@@ -13,12 +14,12 @@ export const HPInfo = () => {
           <AboutMe />
         </div>
 
-        <div  className='box'>
+        <div  className='box2'>
           <Skills />
         </div>
 
         <div className='box'>
-        <h3 className='HPtitles'>Hobbies</h3>
+          <Hobbies/>
         </div>
 
         <div className='box'>
@@ -31,7 +32,6 @@ export const HPInfo = () => {
 }
 const InfoStyle = styled.div`
 
-    background-color: #1A2421;
     width: 100%;
     color: #fff;
     min-height: fit-content;
@@ -53,9 +53,19 @@ const InfoStyle = styled.div`
   padding: 1rem;
   height: 10WH;
   z-index: 1;
+  color: #fff;
 }
 .Aboutme{
   margin-top: 0;
   padding-top: 0;
+}
+.box2{
+  color: #1A2421;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  max-height: max-content;
+  overflow: hidden;
+
 }
 `
