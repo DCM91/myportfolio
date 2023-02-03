@@ -11,7 +11,7 @@ export const AboutMe = () => {
   return (
     <AbouStyle>
       <div>
-          <h3 className='title' href='#action20'>About Me</h3>
+          <h3 className='title' href='#action20'>About <span>Me</span></h3>
       </div>
       <div>
           <p className='Aboutme'>
@@ -20,7 +20,7 @@ export const AboutMe = () => {
 
           Durante 10 años, fui autónomo independiente en Barcelona, donde aprendí a trabajar en equipo y a ser resolutivo pero decidí dar un giro a mi carrera y comencé a estudiar desarrollo de software Full Stack.<br/> 
           <br />
-          Actualmente, llevo un año dedicado a este campo y me encanta descubrir nuevas tecnologías y herramientas.<br />En mi tiempo libre, disfruto de pasatiempos como la NBA <SiJordan/>, calistenia <CgGym />, videojuegos <IoGameController /> o de mi compañia felina <GiCat/>.<br />
+          Actualmente, llevo un año dedicado a este campo y me encanta descubrir nuevas tecnologías y herramientas.<br />En mi tiempo libre, disfruto de pasatiempos como la NBA <span><SiJordan/></span>, calistenia <span><CgGym /></span>, videojuegos <span><IoGameController /></span> o de mi compañia felina <span><GiCat/></span>.<br />
           <br />
 
           En mi portafolio podrá encontrar una variedad de proyectos que he desarrollado y estoy seguro de que podré aportar valor a cualquier equipo en el que tenga la oportunidad de trabajar.
@@ -64,4 +64,7 @@ const AbouStyle= styled.div`
 
   
 }
+span{
+    color: #ff760d ;
+  }
 `

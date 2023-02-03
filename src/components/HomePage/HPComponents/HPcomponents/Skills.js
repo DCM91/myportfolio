@@ -1,11 +1,11 @@
 import React from 'react'
 import { MdBuild, MdOutlineStorage, MdScience, MdStarRate, MdWeb } from 'react-icons/md';
-import { DiBootstrap, DiCss3, DiGitBranch, DiHtml5, DiJavascript1, DiNodejs, DiReact } from "react-icons/di";
+import { DiBootstrap, DiCss3, DiGitBranch, DiHtml5, DiJavascript1, DiNodejs, DiReact, DiScrum } from "react-icons/di";
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components';
-import { SiCypress, SiExpress, SiInsomnia, SiJest, SiMongodb } from 'react-icons/si';
+import { SiCypress, SiExpress, SiInsomnia, SiJest, SiJsonwebtokens, SiMongodb } from 'react-icons/si';
 
 
 export const Skills = () => {
@@ -55,6 +55,7 @@ export const Skills = () => {
           <DiNodejs/>
           <SiExpress/>
           <SiMongodb/>
+          <SiJsonwebtokens/>
         </h3>
       </VerticalTimelineElement>
 
@@ -71,6 +72,7 @@ export const Skills = () => {
           <DiGitBranch/>
           <DiBootstrap/>
           <SiInsomnia/>
+          <DiScrum />
         </h3>
       </VerticalTimelineElement>
 
@@ -108,7 +110,6 @@ const TimeLineStyle = styled.div`
     font-weight: bolder;
     padding-bottom: 2rem;
     font-family: "Poppins", sans-serif;
-    padding-top: 2rem;
     
 
 .all{

@@ -14,5 +14,28 @@ code {
 }
 #root{
   background: radial-gradient(ellipse at center ,#1b2735 20%,#090a0f 80%);
+  font-family: "Poppins", sans-serif;
 
+
+}
+.modal-header{
+  display: flex;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center !important;
+  justify-content: center !important;
+  font-weight: bolder;
+ }
+
+.modal-content{
+  background: radial-gradient(ellipse at center ,#1a4474 10%,#090a0f 90%)  !important;
+  color: #f2f2f2 !important;
+  text-align: center !important;
+  font-family: "Poppins", sans-serif !important;
+  box-shadow: .2rem .2rem .5rem #0A0A0B, .2rem .2rem .5rem #445CA3;
+
+}
+.formulario{
+  display: block;
+  text-align: start !important;
 }

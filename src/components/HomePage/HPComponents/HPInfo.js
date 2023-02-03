@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { AboutMe } from './HPcomponents/AboutMe';
 import { Hobbies } from './HPcomponents/Hobbies';
 import { Skills } from './HPcomponents/Skills';
+import { Works } from './HPcomponents/Works';
 
 
 
@@ -24,6 +25,7 @@ export const HPInfo = () => {
 
         <div className='box'>
         <h3 className='HPtitles'>My Dev works</h3>
+          <Works/>
 
         </div>
       </div>
@@ -47,6 +49,7 @@ const InfoStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
+  padding-bottom: 2rem;
 }
 .HPtitles{
   margin: 1rem;

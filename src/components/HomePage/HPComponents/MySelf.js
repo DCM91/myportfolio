@@ -29,7 +29,7 @@ export const MySelf = () => {
               2000,
               ]}
               speed={30} // Custom Speed from 1-99 - Default Speed: 40
-              style={{ fontSize: '1em' }}
+              style={{ fontSize: '1em', color: '#ff760d'  }}
               wrapper="span" // Animation will be rendered as a <span>
               repeat={Infinity} // Repeat this Animation Sequence infinitely
             />.

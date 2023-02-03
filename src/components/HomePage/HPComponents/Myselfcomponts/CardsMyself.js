@@ -11,7 +11,7 @@ export const CardsMyself = () => {
           className="cards"
           border="warning"
           bg="dark"
-          style={{ width: "7rem", height: "7.5rem" }}
+          style={{ width: "7rem", height: "7.5rem", color: 'rgb(33, 150, 243)' }}
         >
           <Card.Header>FRONTEND</Card.Header>
           <Card.Body>
@@ -25,7 +25,7 @@ export const CardsMyself = () => {
           className="cards"
           border="warning"
           bg="dark"
-          style={{ width: "7rem", height: "7.5rem" }}
+          style={{ width: "7rem", height: "7.5rem", color: 'rgb(233, 30, 99)' }}
         >
           {" "}
           <Card.Header>BACKEND</Card.Header>
@@ -40,7 +40,7 @@ export const CardsMyself = () => {
           className="cards"
           border="warning"
           bg="dark"
-          style={{ width: "7rem", height: "7.5rem" }}
+          style={{ width: "7rem", height: "7.5rem", color: '#808080' }}
         >
           {" "}
           <Card.Header>TOOLS</Card.Header>
@@ -55,7 +55,7 @@ export const CardsMyself = () => {
           className="cards"
           border="warning"
           bg="dark"
-          style={{ width: "7rem", height: "7.5rem" }}
+          style={{ width: "7rem", height: "7.5rem", color: '#00a05d' }}
         >
           {" "}
           <Card.Header>TDD</Card.Header>
