@@ -5,11 +5,12 @@ import styled from 'styled-components';
 export const Works=()=> {
   return (
     <WorksStyle>
+      <h3 className='HPtitles'>My <span>Dev</span> works</h3>
     <div>
 
 
-    <div style={{ color: 'black', padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
-    <Card className='workcard' style={{ color: 'black' }}>
+    <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
+    <Card className='workcard' >
       <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
       <Card.Body >
         <Card.Title>Slack Clone</Card.Title>
@@ -25,8 +26,8 @@ export const Works=()=> {
      </div>
 
 
-     <div style={{ color: 'black', padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
-    <Card className='workcard' style={{ color: 'black' }}>
+     <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
+    <Card className='workcard' >
     <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
       <Card.Body>
         <Card.Title>Pokedex</Card.Title>
@@ -42,8 +43,8 @@ export const Works=()=> {
     </div>
 
 
-    <div style={{ color: 'black', padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
-    <Card className='workcard' style={{ color: 'black' }}>
+    <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
+    <Card className='workcard' >
     <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
       <Card.Body>
         <Card.Title>Blockbuster</Card.Title>
@@ -59,8 +60,8 @@ export const Works=()=> {
     </Card>
     </div>
 
-    <div style={{ color: 'black', padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
-    <Card className='workcard' style={{ color: 'black' }}>
+    <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
+    <Card className='workcard' >
     <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
       <Card.Body>
         <Card.Title>ClaculatorJSX</Card.Title>
@@ -70,7 +71,7 @@ export const Works=()=> {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 1 month ago</small>
+        <small className="text-muted">Last updated 4 months ago</small>
       </Card.Footer>
     </Card>
     </div>
@@ -85,10 +86,16 @@ const WorksStyle= styled.div`
 
 .workcard{
   
-  background-color: brown;
+  background-color: #090a0f;
   width: 75%;
   padding: 1rem;
+  color: #f2f2f2;
 
 }
-
+span{
+  color: #ff760d;
+}
+h3{
+  font-family: "Righteous",cursive;
+}
 `

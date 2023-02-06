@@ -30,6 +30,8 @@ export const CanvassNav = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3" >
+              <Nav.Link href="#action1"><p>Home Page<AiOutlineHome className="icon"/></p></Nav.Link>
+
                 <NavDropdown
                   title="About Me"
                   id={`offcanvasNavbarDropdown-expand-md`}
@@ -44,7 +46,6 @@ export const CanvassNav = () => {
                     All my DevWorks here! :)
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#action1"><p>Home Page<AiOutlineHome className="icon"/></p></Nav.Link>
                 <Nav.Link href="#action2"><p>Contact<AiOutlineUser className="icon"/></p></Nav.Link>
               </Nav>
             </Offcanvas.Body>

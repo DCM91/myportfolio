@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 import styled from 'styled-components'
 
 export const Hobbies = () => {
@@ -9,18 +10,45 @@ export const Hobbies = () => {
      <h3>Hobbies</h3>
     </div>
     <div>
+      
         <section className='Sk'>
-        <h5>NBA</h5>
+          <Card className="bg-dark text-white">
+            <Card.Img className='fotos' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZwW2CvpKH7uFqbfUglHhHtarKxf4RRlq-brCouZpyFKRk3tBxOUawYjqSspEiJHmtIgE&usqp=CAU' alt="NBA" />
+
+            <Card.Title><h5>NBA</h5></Card.Title>
+          </Card> 
         </section>
+              
         <section className='Sk'>
-        <h5>Gaming</h5>
+          <Card className="bg-dark text-white">
+            <Card.Img 
+              className='fotos'
+              src='https://store-images.s-microsoft.com/image/apps.54313.65765405318615559.1860d263-d982-466f-947a-523231ff1c3f.f28d0585-8032-4d71-9c36-6988cc6e698d?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF'
+              alt="Gaming" />
+            <Card.Title><h5>Gaming</h5></Card.Title>
+          </Card> 
         </section>
+
+
+
         <section className='Sk'>
-        <h5>My Pets</h5>
+          <Card className="bg-dark text-white">
+            <Card.Img className='fotos' src='https://www.gatoexotico.com/wp-content/uploads/2020/04/gato-blanco-negro-cachorro.jpg' alt="My cats" />
+
+            <Card.Title><h5>My Pets</h5></Card.Title>
+          </Card> 
         </section>
+
         <section className='Sk'>
-        <h5>Training</h5>
+          <Card className="bg-dark text-white">
+            <Card.Img 
+              className='fotos'
+              src='https://st.depositphotos.com/1017227/3879/i/450/depositphotos_38790633-stock-photo-dumbells-on-wooden-floor.jpg'
+              alt="Training" />
+            <Card.Title><h5>Training</h5></Card.Title>
+          </Card> 
         </section>
+
      </div>
     
     </SkillsStyle>
@@ -30,46 +58,48 @@ export const Hobbies = () => {
 const SkillsStyle= styled.div`
 
     width: 100%;
-    height: 40vh;
+    min-height: 60vh;
+    max-height: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap:  wrap;
     justify-content: center;
     text-decoration: none;
     color: white;
     background: #090a0f;
-
+h3{
+  padding-top: 2rem;
+  padding-bottom: -1rem;
+  font-family: "Righteous",cursive;
+}
 
 h5{
     max-width: max-content;
-    min-height: fit-content;
-    max-height: max-content;
     color: #ffec78;
     text-align: center;
-        :hover{
-                color: red;
-                scale: 1.05;
-
-            }
 
 
 }
 .Sk{
     width: 20%;
-    height: 20vh;
-    border: solid .5rem #ffec78;
+    min-height: 90%;
+    max-height: fit-content;
     margin: .5rem;
-    padding: .5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    :hover{
-            color: red;
-            scale: 1.05 ease-in duration-300;
-            border: solid .5rem red;
-
-
-        }
+    overflow: hidden;
 
 }
+.fotos{
+  width: 100%;
+  height: 78%;
+}
+.bg-dark{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+}
+
 `

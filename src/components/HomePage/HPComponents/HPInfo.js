@@ -24,9 +24,7 @@ export const HPInfo = () => {
         </div>
 
         <div className='box'>
-        <h3 className='HPtitles'>My Dev works</h3>
           <Works/>
-
         </div>
       </div>
     </InfoStyle>
