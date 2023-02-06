@@ -48,6 +48,10 @@ const InfoStyle = styled.div`
   flex-direction: column;
   align-content: center;
   padding-bottom: 2rem;
+
+  flex-wrap: wrap;
+  text-align: center;
+
 }
 .HPtitles{
   margin: 1rem;
