@@ -85,6 +85,7 @@ h5{
 
 }
 .Sk{
+    border: #ffec78 solid .2rem;
     width: 16rem;
     min-height: 15REM;
     max-height: fit-content;
@@ -94,6 +95,10 @@ h5{
     justify-content: center;
     overflow: hidden;
     padding: 0.1rem;
+    :hover{
+      border: #bf1e2d solid .4rem;
+
+    }
 
 }
 .fotos{

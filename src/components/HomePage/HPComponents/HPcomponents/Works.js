@@ -11,12 +11,14 @@ export const Works=()=> {
 
     <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
     <Card className='workcard' >
-      <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
+      <Card.Img variant="top" src={require('../img/skuadlack.png')} />
       <Card.Body >
         <Card.Title>Slack Clone</Card.Title>
         <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
+        This is the largest project I've completed as a Full Stack developer. 
+        It's a clone of Slack that can register users, create organizations, send direct messages and create channels among users within an organization.
+        {/*Este es el mayor proyecto realizado como FullStack, se trata de un clon de slack capaz de registrar usuarios, crear organizaciones,
+          enviar mensajes directos y creacion de canales entre usuarios en una organizacion*/}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
@@ -28,12 +30,12 @@ export const Works=()=> {
 
      <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
     <Card className='workcard' >
-    <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
+    <Card.Img variant="top" src={require('../img/pokedex.png')} />
       <Card.Body>
         <Card.Title>Pokedex</Card.Title>
         <Card.Text>
-          This card has supporting text below as a natural lead-in to
-          additional content.{' '}
+        This is my first Front End project which makes requests to an API (pokeAPI), showcasing my first steps with the fetch function.
+        {/*Este es mi primer proyecto de Front que hace peticiones a una API (pokeAPI) mostrando mis primeros pasos con la función fetch */}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
@@ -45,13 +47,12 @@ export const Works=()=> {
 
     <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
     <Card className='workcard' >
-    <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
+    <Card.Img variant="top" src={require('../img/blockbuster.png')}  />
       <Card.Body>
         <Card.Title>Blockbuster</Card.Title>
         <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This card has even longer content than the
-          first to show that equal height action.
+        This is my first Full Stack project, it's a movie library where you can save movies with description and release year. This project runs with the command "npm start".
+        {/*Este es mi primer proyecto de Full Stack, se trata de una filmoteca donde se pueden guardar películas con descripción y año de lanzamiento. Este proyecto funciona mediante el comando "npm start". */}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
@@ -62,12 +63,14 @@ export const Works=()=> {
 
     <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-end'}}>
     <Card className='workcard' >
-    <Card.Img variant="top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ExKo3cO4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/59ta1m2cp7h8vng9aow2.png" />
+    <Card.Img variant="top" src={require('../img/calculator.png')} />
       <Card.Body>
         <Card.Title>ClaculatorJSX</Card.Title>
         <Card.Text>
-          This card has supporting text below as a natural lead-in to
-          additional content.{' '}
+        Web application that allows users to perform basic arithmetic operations.
+        The project is built using React and runs with the command "npm start".
+        {/*Aplicación web que permite a los usuarios realizar operaciones aritméticas básicas. El proyecto
+         está construido usando React. Este proyecto funciona mediante el comando "npm start". */}
         </Card.Text>
       </Card.Body>
       <Card.Footer>

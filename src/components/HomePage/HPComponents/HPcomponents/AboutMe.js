@@ -15,6 +15,20 @@ export const AboutMe = () => {
       </div>
       <div>
           <p className='Aboutme'>
+          I am passionate about learning and continuous improvement in the IT sector, and eager to acquire new knowledge and skills in this field.<br />
+          <br />
+
+          For 10 years, I was an independent freelancer in Barcelona where I learned to work in a team and be solution-oriented. But I decided to change my career path and started studying Full Stack software development.<br/> 
+          <br />
+          Currently, I have been in this field for a year and I love discovering new technologies and tools.<br />In my free time, I enjoy hobbies like NBA<span><SiJordan/></span>, calisthenics <span><CgGym /></span>, video games<span><IoGameController /></span> and spending time with my cats<span><GiCat/></span>.<br />
+          <br />
+
+          In my portfolio, you will find a variety of projects that I have developed and I am sure I can bring value to any team I have the opportunity to work with
+
+          </p>
+
+
+{         /* <p className='Aboutme'>
           Soy un apasionado por el aprendizaje y la mejora continua en el sector TIC, y con gran deseo por adquirir nuevos conocimientos y habilidades en este campo.<br />
           <br />
 
@@ -25,7 +39,7 @@ export const AboutMe = () => {
 
           En mi portafolio podrá encontrar una variedad de proyectos que he desarrollado y estoy seguro de que podré aportar valor a cualquier equipo en el que tenga la oportunidad de trabajar.
 
-          </p>
+          </p>*/}
       </div>
     </AbouStyle>
   )

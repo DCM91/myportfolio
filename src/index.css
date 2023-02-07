@@ -41,3 +41,32 @@ code {
   display: block;
   text-align: start !important;
 }
+.part1{
+  width: 70% !important;
+}
+.part2{
+  width: 40% !important;
+  max-width: fit-content !important;
+  justify-content: center !important;
+  padding: 2rem;
+  justify-items: center !important;
+
+}
+.mifoto{
+  background: white !important;
+  width: 8rem !important;
+  height: 12rem !important;
+  position: relative !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  box-shadow: .6rem .6rem .8rem #0A0A0B, .6rem .6rem .8rem #445CA3 !important;
+  border-radius: 10%;
+
+
+}
+.bodycon{
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
