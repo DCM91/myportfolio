@@ -75,6 +75,7 @@ h3{
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-family: "Righteous",cursive;
+  color: #f2f2f2;
 }
 
 h5{

@@ -11,19 +11,19 @@ export const HPInfo = () => {
   return (
     <InfoStyle>
       <div>
-        <div className='box' >
+        <div className='box' id='about' >
           <AboutMe />
         </div>
 
-        <div  className='box2'>
+        <div  className='box2' id='skills'>
           <Skills />
         </div>
 
-        <div className='box'>
+        <div className='box' id='hobbies'>
           <Hobbies/>
         </div>
 
-        <div className='box'>
+        <div className='box' id='works'>
           <Works/>
         </div>
       </div>

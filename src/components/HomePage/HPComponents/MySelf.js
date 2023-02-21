@@ -8,7 +8,7 @@ export const MySelf = () => {
   return (
     <SelfStyle>
           <Partic />
-          <h1>
+          <h1 id="init">
             Full Stack <span>Developer</span>
           </h1>
         <div className="content">

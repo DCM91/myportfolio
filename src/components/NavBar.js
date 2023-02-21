@@ -5,12 +5,17 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineUser } from 'react-icons/ai';
+import { Contact } from "./Contact";
+import { useState } from "react";
+
 
 
 
 
 export const CanvassNav = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <NavBarStyle>
     <div>
@@ -30,24 +35,25 @@ export const CanvassNav = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3" >
-              <Nav.Link href="#action1"><p>Home Page<AiOutlineHome className="icon"/></p></Nav.Link>
 
                 <NavDropdown
                   title="About Me"
                   id={`offcanvasNavbarDropdown-expand-md`}
                 >
-                  <NavDropdown.Item href="#action20"> About Me</NavDropdown.Item>
+                  <NavDropdown.Item href="#about"> About Me</NavDropdown.Item>
 
                   
-                  <NavDropdown.Item href="#action3">Skills</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Hobbies</NavDropdown.Item>
+                  <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
+                  <NavDropdown.Item href="#hobbies">Hobbies</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    All my DevWorks here! :)
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#works" >All my DevWorks here! :)</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#action2"><p>Contact<AiOutlineUser className="icon"/></p></Nav.Link>
-              </Nav>
+                <Nav.Link href="#action2" onClick={() => setModalShow(true)}><p>Contact<AiOutlineUser className="icon"/></p></Nav.Link>
+                <Contact
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
+          </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

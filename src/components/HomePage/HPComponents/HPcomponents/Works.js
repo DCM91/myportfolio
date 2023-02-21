@@ -10,10 +10,10 @@ export const Works=()=> {
 
 
     <div style={{  padding: '1rem', margin: '0 1rem', width: '100%', justifyContent: 'flex-start'}}>
-    <Card className='workcard' >
-      <Card.Img variant="top" src={require('../img/skuadlack.png')} />
+    <Card className='workcard'>
+      <Card.Img variant="top" src={require('../img/skuadlack.png')}  />
       <Card.Body >
-        <Card.Title>Slack Clone</Card.Title>
+        <Card.Title>Slack <span> Clone</span></Card.Title>
         <Card.Text>
         This is the largest project I've completed as a Full Stack developer. 
         It's a clone of Slack that can register users, create organizations, send direct messages and create channels among users within an organization.
@@ -22,7 +22,7 @@ export const Works=()=> {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted"><a href='https://skuadlack.netlify.app/'>Visit Skuadlack</a> </small>
       </Card.Footer>
     </Card>
      </div>
@@ -32,14 +32,14 @@ export const Works=()=> {
     <Card className='workcard' >
     <Card.Img variant="top" src={require('../img/pokedex.png')} />
       <Card.Body>
-        <Card.Title>Pokedex</Card.Title>
+        <Card.Title>Pokedex<span>JSX</span></Card.Title>
         <Card.Text>
         This is my first Front End project which makes requests to an API (pokeAPI), showcasing my first steps with the fetch function.
         {/*Este es mi primer proyecto de Front que hace peticiones a una API (pokeAPI) mostrando mis primeros pasos con la función fetch */}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 1 month ago</small>
+        <small className="text-muted"><a href='https://dcm91.github.io/pokedexJSX/'>Visit my pokedex</a></small>
       </Card.Footer>
     </Card>
     </div>
@@ -49,14 +49,14 @@ export const Works=()=> {
     <Card className='workcard' >
     <Card.Img variant="top" src={require('../img/blockbuster.png')}  />
       <Card.Body>
-        <Card.Title>Blockbuster</Card.Title>
+        <Card.Title>Block<span>buster</span></Card.Title>
         <Card.Text>
         This is my first Full Stack project, it's a movie library where you can save movies with description and release year. This project runs with the command "npm start".
         {/*Este es mi primer proyecto de Full Stack, se trata de una filmoteca donde se pueden guardar películas con descripción y año de lanzamiento. Este proyecto funciona mediante el comando "npm start". */}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 2 months ago</small>
+        <small className="text-muted"><a href='https://github.com/DCM91/BlockBuster'>visit my GH repository</a></small>
       </Card.Footer>
     </Card>
     </div>
@@ -65,7 +65,7 @@ export const Works=()=> {
     <Card className='workcard' >
     <Card.Img variant="top" src={require('../img/calculator.png')} />
       <Card.Body>
-        <Card.Title>ClaculatorJSX</Card.Title>
+        <Card.Title>Claculator<span>JSX</span></Card.Title>
         <Card.Text>
         Web application that allows users to perform basic arithmetic operations.
         The project is built using React and runs with the command "npm start".
@@ -74,7 +74,7 @@ export const Works=()=> {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small className="text-muted">Last updated 4 months ago</small>
+        <small className="text-muted"><a href='https://github.com/DCM91/CalculatorJSX'>visit my GH repository</a></small>
       </Card.Footer>
     </Card>
     </div>
@@ -99,6 +99,6 @@ span{
   color: #ff760d;
 }
 h3{
-  font-family: "Righteous",cursive;
+  font-weight: bolder;
 }
 `

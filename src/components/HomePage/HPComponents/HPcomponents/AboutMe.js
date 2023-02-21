@@ -10,8 +10,8 @@ import { GiCat } from "react-icons/gi";
 export const AboutMe = () => {
   return (
     <AbouStyle>
-      <div>
-          <h3 className='title' href='#action20'>About <span>Me</span></h3>
+      <div >
+          <h3 className='title'  >About <span>Me</span></h3>
       </div>
       <div>
           <p className='Aboutme'>
@@ -73,7 +73,7 @@ const AbouStyle= styled.div`
 .title{
   text-decoration: none;
   color: white;
-  font-family: "Righteous", cursive;
+  font-weight: bolder;
   padding-bottom: 1rem;
 
   
